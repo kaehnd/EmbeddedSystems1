@@ -47,8 +47,7 @@
 
 			#Sytem config values
 			.equ SYSCFG_BASE, 0x40013800
-			.equ SYSCFG_EXTICR2, 0x0C
-
+			.equ SYSCFG_EXTICR2, 0x0
 			#NVIC values
 			.equ NVIC_BASE, 0xE000E100
 			.equ NVIC_ISER0, 0x000
@@ -92,8 +91,6 @@ ADC1Init:
 
 			#Turn on SYSCFG in RCC
 			ldr r5, [r4, #RCC_APB2ENR]
-			orr r5, r5, #(1<<14)
-			str r5, [r4, RCC_APB2ENR]
 
 			#Enable Interrupt in NVIC table
 			ldr r4, =NVIC_BASE
