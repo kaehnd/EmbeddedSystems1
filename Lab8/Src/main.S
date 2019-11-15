@@ -520,6 +520,21 @@ rstBuffer:
 			pop {r2-r4}
 			bx lr
 
+
+doThings:
+
+			push {r0-lr}
+
+			#do things
+
+			pop {r0-sp, pc}
+
+			#this does things
+
+
+
+
+
 .section .data
 	#Buffer values
 	bufferSize: .byte 5
