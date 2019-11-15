@@ -1,0 +1,11 @@
+.metadata/
+.settings/
+Debug/
+Drivers/
+Inc/
+*.cproject
+*.mxproject
+*.project
+*.launch
+*.ioc
+*.ld
